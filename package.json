@@ -1,0 +1,20 @@
+{
+  "name": "mapEditor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack":"electron-packager ./ mapEditor --out ./mapEditor --overwrite --icon=./favicon.ico  --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/",
+    "pack2":"electron-packager ./ mapEditor --out ./mapEditor --platform=darwin   --overwrite --icon=./favicon.ico  --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/",
+    "electronPacker":"electron-packager  --platform=win32 --arch=x64 --out=./dist --icon=./favicon.ico--app-version=0.1.0 --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --download.mirrorOptions.customDir=7.1.2",
+    "packageDarwin": "electron-packager . 'Hosts' --platform=darwin --arch=x64 --icon=./favicon.ico --out=./dist --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.5"
+  }
+}
